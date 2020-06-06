@@ -1,0 +1,19 @@
+{
+  "name": "reddit_clone",
+  "version": "1.0.0",
+  "description": "Reddit App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jetsgreen/reddit_clone.git"
+  },
+  "author": "Felix Fernandez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jetsgreen/reddit_clone/issues"
+  },
+  "homepage": "https://github.com/jetsgreen/reddit_clone#readme"
+}
