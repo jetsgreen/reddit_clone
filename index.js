@@ -21,6 +21,7 @@ searchForm.addEventListener('submit', e => {
 
 
     clearFields();
+    
 
     function search(searchTerm, limit, sortBy) {
         return fetch(`http://www.reddit.com/search.json?q=${searchTerm}&sort=${sortBy}&limit=${limit}`)
@@ -28,7 +29,6 @@ searchForm.addEventListener('submit', e => {
          .then(data => (data.data.children).map(data => data.data))
          .catch(err => console.log(err));
       }
-
     // Search Reddit
     search(searchTerm, limit, sortBy).then(results => {
         console.log(results);
