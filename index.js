@@ -32,14 +32,15 @@ searchForm.addEventListener('submit', e => {
             let image = post.preview ? post.preview.images[0].source.url : "https://media.wired.com/photos/5954a1b05578bd7594c46869/master/w_1600,c_limit/reddit-alien-red-st.jpg";
             output += `
             <div class="card">
-  <img src="${image}" class="card-img-top" alt="...">
+  <img src=${image} class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${post.title}</h5>
     <p class="card-text">${truncateText(post.selftext, 100)}</p>
-    <a href="#" class="btn btn-primary">Read More</a>
+    <a href=${post.url} target="_blank" class="btn btn-primary">Bigger Image</a>
     <hr>
     <span class="badge badge-primary>Subreddit: ${post.subreddit}</span>
-    <span class="badge badge-secondary>Score: ${post.score}</span>
+    <span class="badge badge-dark>Score: ${post.score}</span>
+    
   </div>
 </div>`
         });
