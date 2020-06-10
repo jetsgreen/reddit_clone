@@ -24,7 +24,7 @@ searchForm.addEventListener('submit', e => {
     
 
     function search(searchTerm, limit, sortBy) {
-        return fetch(`http://www.reddit.com/search.json?q=${searchTerm}&sort=${sortBy}&limit=${limit}`)
+        return fetch(`https://www.reddit.com/search.json?q=${searchTerm}&sort=${sortBy}&limit=${limit}`)
          .then(res => res.json())
          .then(data => (data.data.children).map(data => data.data))
          .catch(err => console.log(err));
